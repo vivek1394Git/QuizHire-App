@@ -1,0 +1,72 @@
+.Login {
+  margin: auto;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.Login h2 {
+  margin-top: 3vh;
+}
+.Login-Form {
+  margin: 3vh 0;
+  align-self: center;
+  max-height: 60%;
+  width: 80%;
+  height: 100%;
+  padding: 4vh;
+  border: 2px solid rgb(0, 242, 250);
+  border-radius: 3%;
+  background-color: #22bfc479;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 15px rgb(49, 15, 15);
+  align-content: center
+  ;
+}
+.Login-Form div {
+  display: inline-flex;
+  align-content: center;
+  flex-direction: column;
+  margin-bottom: 3vh;
+}
+
+.Login-Form div input:focus {
+  background-color: rgb(0, 0, 0);
+}
+.Login-Form div input{
+  outline: none;
+  background-color: rgba(9, 240, 228, 0.692);
+  color: white;
+  padding: 2vh;
+  border: 2px solid #00f2fa;
+}
+.Login-Form button {
+  padding: 2vh;
+  outline: none;
+  border-radius: 2vh;
+  background-color: #222222b6;
+  box-shadow: 0 0 15px rgb(49, 15, 15);
+}
+
+@media (max-width: 900px) {
+  .Login {
+    width: 70%;
+  }
+}
+@media (max-width: 500px) {
+  .Login, .Login-Form {
+    width: 90%;
+  }
+}
+@media (max-width: 350px) {
+  .Login {
+    width: 100%;
+  }
+  .Login-Form {
+    width: 95%;
+  }
+  .Login-Form {
+    font-size: 1.5vh;
+  }
+}
+

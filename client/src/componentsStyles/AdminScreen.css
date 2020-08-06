@@ -1,0 +1,194 @@
+.Admin-Screen {
+  display: flex;
+  padding-left: 2%;
+  width: 100%;
+  flex-direction: column;
+  margin-bottom: 2vh;
+}
+.Update-Data h1{
+  margin-bottom: 3vh;
+}
+.Update-Data h2, .Tests h2{
+  margin-bottom: 2vh;
+}
+.Update-Data button, .Tests button, .Questions button, .Create-Test button{
+  font-size: 3vh;
+  align-self: flex-start;
+  border-radius: 2vh;
+  outline: none;
+  padding: 1vh;
+  background-color: rgba(59, 31, 31, 0.849);
+  margin-bottom: 5vh;
+  margin-right: 2%;
+}
+.Tests button, .Questions button, .Create-Test button {
+  padding: 1vh 2vw;
+}
+
+.Questions {
+  display: flex;
+  flex-direction: column;
+}
+.New-Nav {
+  display: flex;
+  justify-content: space-between;
+}
+.New-Nav button {
+  margin: 2vh 3% 2vh 0;
+}
+
+.Question {
+  margin: auto;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.Question h1 {
+  margin-top: 4vh;
+}
+.Question h2 {
+  margin-top: 3vh;
+}
+.Question-Form {
+  margin: 3vh 0;
+  height: 100%;
+  padding: 4vh;
+  border: 2px solid rgb(0, 242, 250);
+  border-radius: 8%;
+  background-color: #22bfc479;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 15px rgb(49, 15, 15);
+  align-content: center
+  ;
+}
+.Question-Form div {
+  display: inline-flex;
+  align-content: center;
+  flex-direction: column;
+  margin-bottom: 3vh;
+}
+
+.Question-Form div input:focus, .Question-Form div textarea:focus {
+  background-color: rgb(0, 0, 0);
+}
+.Question-Form div input, textarea{
+  outline: none;
+  background-color: rgba(9, 240, 228, 0.692);
+  color: white;
+  padding: 2vh;
+  border: 2px solid #00f2fa;
+}
+.Question-Form button {
+  padding: 2vh;
+  outline: none;
+  border-radius: 2vh;
+  background-color: #222222b6;
+  box-shadow: 0 0 15px rgb(49, 15, 15);
+}
+
+.List-Question h3{
+  font-size: 3vh;
+  color: rgba(120, 255, 10, 0.849);
+}
+
+.Create-Test h1 {
+  margin-bottom: 2vh;
+}
+.Single-Test h2 {
+  margin-bottom: 1vh;
+}
+.Single-Test h3 {
+  color: rgba(120, 255, 10, 0.849);
+}
+.Single-Test button {
+  margin-top: 1vh;
+}
+
+.Add-Test {
+  margin: auto;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.Add-Test h1 {
+  margin-top: -4vh;
+}
+.Add-Test h2 {
+  margin-top: 3vh;
+}
+.Add-Test-Form {
+  align-self: center;
+  margin: 3vh 0;
+  height: 100%;
+  width: 80%;
+  padding: 4vh;
+  border: 2px solid rgb(0, 242, 250);
+  border-radius: 3%;
+  background-color: #22bfc479;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 15px rgb(49, 15, 15);
+  align-content: center
+  ;
+}
+.Add-Test-Form div {
+  display: inline-flex;
+  flex-direction: column;
+  margin-bottom: 3vh;
+}
+
+.Add-Test-Form div input:focus {
+  background-color: rgb(0, 0, 0);
+}
+.Add-Test-Form div input {
+  outline: none;
+  background-color: rgba(9, 240, 228, 0.692);
+  color: white;
+  padding: 2vh;
+  border: 2px solid #00f2fa;
+}
+.Add-Test-Form button {
+  padding: 2vh;
+  outline: none;
+  border-radius: 2vh;
+  background-color: #222222b6;
+  box-shadow: 0 0 15px rgb(49, 15, 15);
+}
+
+.Result {
+  display: flex;
+  flex-direction: column;
+}
+.Single-Result {
+  display: flex;
+  margin-top: 2vh;
+}
+.Result-Details {
+  margin-left: 2%;
+}
+.Result-Details h2 span {
+  color: rgba(120, 255, 10, 0.849);
+}
+
+
+@media (max-width: 900px) {
+  .Question, .Add-Test {
+    width: 70%;
+  }
+}
+@media (max-width: 500px) {
+  .Question, .Add-Test {
+    width: 90%;
+  }
+}
+@media (max-width: 350px) {
+  .Question, .Add-Test {
+    width: 100%;
+  }
+  .Add-Test-Form {
+    font-size: 1.5vh;
+  }
+}
+
+

@@ -1,0 +1,250 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-size: 4vh;
+  color: rgb(28, 245, 245);
+}
+h1 {
+  font-size: 8vh;
+}
+
+/* The emerging W3C standard
+   that is currently Firefox-only */
+* {
+  scrollbar-width: 0;
+}
+
+/* Works on Chrome/Edge/Safari */
+*::-webkit-scrollbar {
+  width: 0;
+}
+body {
+  background-image: url("./imgg4.jpg");
+  background-size: 100vw 100vh;
+}
+
+#root {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+}
+ul {
+  list-style: none;
+}
+
+button,
+nav ul li {
+  cursor: pointer;
+}
+button:hover,
+nav ul li:hover {
+  text-shadow: 0 0 5px;
+  background-color: rgba(0, 0, 0, 0.877) !important;
+}
+
+.Test-Login div input:focus {
+  background-color: rgb(0, 0, 0);
+}
+
+.App {
+  /* max-height: 500px;
+  max-width: 940px; */
+  max-height: 900px;
+  max-width: 1440px;
+  height: 100%;
+  width: 100%;
+  background-color: #052020ea;
+  box-shadow: 0 0 30px 15px;
+  overflow-x: hidden;
+}
+
+.Nav {
+  position: sticky;
+  top: 0;
+  background-color: #000000fc;
+  width: 100%;
+  padding: 2vh 0;
+  border-bottom: 2px solid rgba(15, 214, 228, 0.74);
+}
+.Nav ul {
+  display: flex;
+  align-items: center;
+}
+.Nav ul li {
+  padding: 3vh 0;
+  text-align: right;
+  margin-right: 3%;
+}
+#logo {
+  border-radius: 5vh;
+  box-shadow: 0px 0px 5px 3px;
+  margin-left: 2%;
+  padding: 3vh;
+}
+.Nav ul li:nth-child(2) {
+  margin-left: auto;
+}
+
+.Main {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  min-height: 100%;
+}
+.Demo-Quiz {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 2%;
+}
+.Demo-Quiz h1 {
+  margin-top: 5vh;
+}
+.Demo-Quiz h2 {
+  margin-top: 3vh;
+}
+.Demo-Quiz h2 span em {
+  font-size: 1em;
+  color: #08ff3d;
+}
+.Demo-Quiz div {
+  margin: auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.Demo-Quiz button {
+  padding: 2vh;
+  outline: none;
+  border-radius: 2vh;
+  background-color: #222222b6;
+  box-shadow: 0 0 5px rgb(49, 15, 15);
+  width: 45%;
+}
+
+.Take-Test {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 2%;
+  padding-right: 1%;
+}
+.Take-Test h1 {
+  margin-top: 5vh;
+}
+.Take-Test h2 {
+  margin-top: 3vh;
+}
+strong {
+  color: rgb(241, 48, 48);
+}
+.Test-Login {
+  margin: 5vh auto;
+  padding: 4vh;
+  border: 2px solid rgb(0, 242, 250);
+  border-radius: 5%;
+  background-color: #22bfc479;
+  display: flex;
+  flex-direction: column;
+  font-size: 4vh;
+  box-shadow: 0 0 15px rgb(49, 15, 15);
+}
+.Test-Login button {
+  padding: 2vh;
+  outline: none;
+  border-radius: 2vh;
+  background-color: #222222b6;
+  box-shadow: 0 0 15px rgb(49, 15, 15);
+}
+.Test-Login div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3vh;
+}
+.Test-Login div input {
+  background-color: rgba(9, 240, 228, 0.692);
+  outline: none;
+  border: 2px solid #00f2fa;
+  color: rgb(255, 255, 255);
+  width: 80%;
+  padding: 2vh;
+}
+.Test-Login div label {
+  width: 20%;
+}
+
+.Footer {
+  display: flex;
+  width: 100%;
+  padding: 2vh 0;
+  align-items: flex-end;
+  justify-content: center;
+  font-size: 3vh;
+  background-color: #000000fc;
+}
+
+@media (min-height: 751px) {
+  * {
+    font-size: 3vh;
+  }
+  h1 {
+    font-size: 6vh;
+  }
+  .Footer {
+    font-size: 2.5vh;
+  }
+  .Test-Login {
+    padding: 3vh;
+    font-size: 2.5vh;
+  }
+  .Test-Login button,
+  .Test-Login input {
+    padding: 1.5vh;
+  }
+}
+
+@media (min-height: 900px) {
+  .Test-Login {
+    padding: 3vh;
+    font-size: 2vh;
+  }
+  @media (max-width: 1100px) {
+    .Test-Login div input {
+      width: 75%;
+    }
+  }
+}
+
+@media (max-width: 750px) {
+  .Demo-Quiz,
+  .Take-Test {
+    width: 100%;
+  }
+  .Demo-Quiz {
+    padding-bottom: 2vh;
+    border-bottom: 2px dashed rgb(50, 185, 226);
+  }
+  .Demo-Quiz button {
+    margin-top: 4vh;
+  }
+  .Test-Login div input {
+    font-size: 2.5vh;
+    width: 70%;
+  }
+  .Test-Login div label {
+    font-size: 2.5vh;
+    width: 30%;
+  }
+}
+@media (max-width: 425px) {
+  .Demo-Quiz button {
+    width: 50%;
+  }
+}
