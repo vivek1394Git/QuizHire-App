@@ -3,7 +3,6 @@ import axios from "axios";
 import SingleTest from "./SingleTest";
 
 function CreateTest({ token, history, match:{url} }) {
-  console.log("create test");
   const [tests, setTests] = useState([]);
   const [numberOfQuestions, setNumberOfQuestions] = useState(0);
 
