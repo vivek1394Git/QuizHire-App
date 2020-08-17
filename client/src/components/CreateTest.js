@@ -11,7 +11,6 @@ function CreateTest({ token, history, match:{url} }) {
     axios
       .post("/api/test/", { token })
       .then((response) => {
-        console.log(response.data);
         setTests(response.data.tests);
         setNumberOfQuestions(response.data.numberOfQuestions);
       })
