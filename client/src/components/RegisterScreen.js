@@ -43,6 +43,7 @@ function RegisterScreen({ history }) {
             type="text"
             name="name"
             value={name}
+            required
             onChange={(e) => setName(e.target.value)}
           />
         </div>
@@ -52,6 +53,7 @@ function RegisterScreen({ history }) {
             type="email"
             name="email"
             value={email}
+            required
             onChange={(e) => setEmail(e.target.value)}
           />
         </div>
@@ -61,6 +63,7 @@ function RegisterScreen({ history }) {
             type="text"
             name="password"
             value={password}
+            required
             onChange={(e) => setPassword(e.target.value)}
           />
         </div>
@@ -70,6 +73,7 @@ function RegisterScreen({ history }) {
             type="text"
             name="company"
             value={company}
+            required
             onChange={(e) => setCompany(e.target.value)}
           />
         </div>
@@ -79,6 +83,7 @@ function RegisterScreen({ history }) {
             type="text"
             name="designation"
             value={designation}
+            required
             onChange={(e) => setDesignation(e.target.value)}
           />
         </div>

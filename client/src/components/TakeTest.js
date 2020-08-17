@@ -40,7 +40,7 @@ function TakeTest({ history }) {
         If you've got the pin from your recruiter, then fill up this form to
         give the test.
       </h2>
-      <strong>Warning:</strong> Do not refresh or leave the page!
+      <strong>Warning:</strong> <span>Do not refresh or leave the page!</span>
       <form className="Test-Login" onSubmit={submitHandler}>
         <div>
           <label>Name: </label>

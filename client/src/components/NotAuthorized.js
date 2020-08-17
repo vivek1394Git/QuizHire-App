@@ -1,11 +1,11 @@
-import React from 'react'
+import React from "react";
 
 function NotAuthorized() {
   return (
-    <div>
-      You're not authorized! Go Back.
+    <div className="Not-Authorized">
+      <h1>You're not authorized! Go Back.</h1>
     </div>
-  )
+  );
 }
 
-export default NotAuthorized
+export default NotAuthorized;

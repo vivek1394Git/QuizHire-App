@@ -54,6 +54,7 @@ function UpdateQuestion({ history, token, match: { params } }) {
             rows={4}
             cols={25}
             style={{ resize: "none", maxWidth: "100%" }}
+            required
             onChange={(e) => setQuestion(e.target.value)}
           />
         </div>
@@ -63,6 +64,7 @@ function UpdateQuestion({ history, token, match: { params } }) {
             type="text"
             name="opt1"
             value={opt1}
+            required
             onChange={(e) => setOpt1(e.target.value)}
           />
         </div>
@@ -72,6 +74,7 @@ function UpdateQuestion({ history, token, match: { params } }) {
             type="text"
             name="opt2"
             value={opt2}
+            required
             onChange={(e) => setOpt2(e.target.value)}
           />
         </div>
@@ -81,6 +84,7 @@ function UpdateQuestion({ history, token, match: { params } }) {
             type="text"
             name="opt3"
             value={opt3}
+            required
             onChange={(e) => setOpt3(e.target.value)}
           />
         </div>
@@ -90,6 +94,7 @@ function UpdateQuestion({ history, token, match: { params } }) {
             type="text"
             name="opt4"
             value={opt4}
+            required
             onChange={(e) => setOpt4(e.target.value)}
           />
         </div>
@@ -100,6 +105,7 @@ function UpdateQuestion({ history, token, match: { params } }) {
             name="answer"
             value={answer}
             placeholder="must be 1,2,3 or 4"
+            required
             onChange={(e) => setAnswer(e.target.value)}
           />
         </div>

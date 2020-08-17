@@ -1,57 +1,75 @@
 .Register {
   margin: auto;
   width: 50%;
-  display: flex;
-  flex-direction: column;
 }
 .Register h1 {
-  margin-top: 4vh;
+  margin-top: 1rem;
 }
 .Register h2 {
-  margin-top: 3vh;
+  margin-top: .5rem;
+  font-size: 1.2rem;
 }
 .Register-Form {
-  margin: 3vh 0;
-  align-self: center;
-  max-height: 60%;
+  margin: 1.5rem auto;
   width: 80%;
-  height: 100%;
-  padding: 4vh;
+  padding: 1.3rem;
   border: 2px solid rgb(0, 242, 250);
-  border-radius: 3%;
+  border-radius: .7rem;
   background-color: #22bfc479;
   display: flex;
   flex-direction: column;
+  font-size: 1.2rem;
   box-shadow: 0 0 15px rgb(49, 15, 15);
-  align-content: center
-  ;
 }
 .Register-Form div {
-  display: inline-flex;
-  align-content: center;
+  display: flex;
   flex-direction: column;
-  margin-bottom: 3vh;
+  margin-bottom: 1rem;
 }
 
 .Register-Form div input:focus {
   background-color: rgb(0, 0, 0);
 }
 .Register-Form div input{
-  outline: none;
   background-color: rgba(9, 240, 228, 0.692);
-  color: white;
-  padding: 2vh;
+  outline: none;
   border: 2px solid #00f2fa;
+  color: rgb(255, 255, 255);
+  padding: .6rem;
+  font-size: 1rem;
 }
 .Register-Form button {
-  padding: 2vh;
+  padding: .8rem;
   outline: none;
-  border-radius: 2vh;
+  border-radius: .6rem;
   background-color: #222222b6;
   box-shadow: 0 0 15px rgb(49, 15, 15);
+  font-size: 1.2rem;
 }
 
 @media (max-width: 900px) {
+  .Register {
+    width: 70%;
+  }
+  .Register-Form {
+    width: 85%;
+  }
+}
+@media (max-width: 700px) {
+  .Register {
+    width: 80%;
+  }
+}
+@media (max-width: 500px) {
+  .Register {
+    width: 90%;
+  }
+  .Register-Form {
+    width: 90%;
+  }
+}
+
+/* @media (max-width: 900px) {
   .Register {
     width: 70%;
   }
@@ -71,5 +89,5 @@
   .Register-Form {
     font-size: 1.5vh;
   }
-}
+} */
 

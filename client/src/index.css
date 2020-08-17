@@ -1,27 +1,30 @@
 *,
-*::after,
-*::before {
+*::before,
+*::after {
   box-sizing: border-box;
-  margin: 0;
   padding: 0;
+  margin: 0;
   text-decoration: none;
-  font-size: 4vh;
   color: rgb(28, 245, 245);
 }
-h1 {
-  font-size: 8vh;
-}
-
 /* The emerging W3C standard
    that is currently Firefox-only */
-* {
+/* * {
   scrollbar-width: 0;
+} */
+/* Works on Chrome/Edge/Safari */
+/* *::-webkit-scrollbar {
+  width: 0;
+} */
+html {
+  font-size: calc(12px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+  /* line-height: calc(1.4em + (1.5 - 1.2) * ((100vw - 300px) / (1600 - 300))); */
 }
 
-/* Works on Chrome/Edge/Safari */
-*::-webkit-scrollbar {
-  width: 0;
+h1 {
+  font-size: 2.7rem;
 }
+
 body {
   background-image: url("./imgg4.jpg");
   background-size: 100vw 100vh;
@@ -69,23 +72,23 @@ nav ul li:hover {
   top: 0;
   background-color: #000000fc;
   width: 100%;
-  padding: 2vh 0;
+  padding: .6rem 0;
   border-bottom: 2px solid rgba(15, 214, 228, 0.74);
 }
 .Nav ul {
   display: flex;
   align-items: center;
+  font-size: 1.3rem;
 }
 .Nav ul li {
-  padding: 3vh 0;
   text-align: right;
-  margin-right: 3%;
+  margin-right: 1rem;
 }
 #logo {
-  border-radius: 5vh;
+  border-radius: 1.5rem;
   box-shadow: 0px 0px 5px 3px;
-  margin-left: 2%;
-  padding: 3vh;
+  margin-left: 1rem;
+  padding: .9rem;
 }
 .Nav ul li:nth-child(2) {
   margin-left: auto;
@@ -95,22 +98,23 @@ nav ul li:hover {
   display: flex;
   width: 100%;
   flex-wrap: wrap;
-  min-height: 100%;
+  min-height: 80%;
 }
 .Demo-Quiz {
   width: 50%;
   display: flex;
   flex-direction: column;
-  padding-left: 2%;
+  padding-left: 1rem;
 }
 .Demo-Quiz h1 {
-  margin-top: 5vh;
+  margin-top: 1.5rem;
 }
 .Demo-Quiz h2 {
-  margin-top: 3vh;
+  margin-top: .5rem;
+  font-size: 1.2rem;
 }
 .Demo-Quiz h2 span em {
-  font-size: 1em;
+  font-size: 1.2rem;
   color: #08ff3d;
 }
 .Demo-Quiz div {
@@ -120,9 +124,10 @@ nav ul li:hover {
   justify-content: space-around;
 }
 .Demo-Quiz button {
-  padding: 2vh;
+  padding: .8rem;
+  font-size: 1.2rem;
   outline: none;
-  border-radius: 2vh;
+  border-radius: .7rem;
   background-color: #222222b6;
   box-shadow: 0 0 5px rgb(49, 15, 15);
   width: 45%;
@@ -132,49 +137,57 @@ nav ul li:hover {
   width: 50%;
   display: flex;
   flex-direction: column;
-  padding-left: 2%;
-  padding-right: 1%;
+  padding-left: 1rem;
+  padding-right: .7rem;
 }
 .Take-Test h1 {
-  margin-top: 5vh;
+  margin-top: 1.5rem;
 }
 .Take-Test h2 {
-  margin-top: 3vh;
+  margin-top: .5rem;
+  font-size: 1.2rem;
+}
+.Take-Test span {
+  font-size: 1.2rem;
 }
 strong {
+  font-size: 1.2rem;
   color: rgb(241, 48, 48);
 }
 .Test-Login {
-  margin: 5vh auto;
-  padding: 4vh;
+  margin: 1.5rem auto;
+  padding: 1.3rem;
   border: 2px solid rgb(0, 242, 250);
-  border-radius: 5%;
+  border-radius: .7rem;
   background-color: #22bfc479;
+  width: 80%;
   display: flex;
   flex-direction: column;
-  font-size: 4vh;
+  font-size: 1.2rem;
   box-shadow: 0 0 15px rgb(49, 15, 15);
 }
 .Test-Login button {
-  padding: 2vh;
+  padding: .8rem;
   outline: none;
-  border-radius: 2vh;
+  border-radius: .6rem;
   background-color: #222222b6;
   box-shadow: 0 0 15px rgb(49, 15, 15);
+  font-size: 1.2rem;
 }
 .Test-Login div {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 3vh;
+  margin-bottom: 1rem;
 }
 .Test-Login div input {
   background-color: rgba(9, 240, 228, 0.692);
   outline: none;
   border: 2px solid #00f2fa;
   color: rgb(255, 255, 255);
-  width: 80%;
-  padding: 2vh;
+  width: 75%;
+  padding: .6rem;
+  font-size: 1rem;
 }
 .Test-Login div label {
   width: 20%;
@@ -183,68 +196,54 @@ strong {
 .Footer {
   display: flex;
   width: 100%;
-  padding: 2vh 0;
-  align-items: flex-end;
+  padding: .7rem 0;
+  align-items: center;
   justify-content: center;
-  font-size: 3vh;
+  font-size: 1rem;
   background-color: #000000fc;
+  min-height: 10%;
 }
 
-@media (min-height: 751px) {
-  * {
-    font-size: 3vh;
-  }
-  h1 {
-    font-size: 6vh;
-  }
-  .Footer {
-    font-size: 2.5vh;
-  }
-  .Test-Login {
-    padding: 3vh;
-    font-size: 2.5vh;
-  }
-  .Test-Login button,
-  .Test-Login input {
-    padding: 1.5vh;
+@media (min-width: 1900px) {
+  html {
+    font-size: calc(8px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
   }
 }
-
-@media (min-height: 900px) {
-  .Test-Login {
-    padding: 3vh;
-    font-size: 2vh;
-  }
-  @media (max-width: 1100px) {
-    .Test-Login div input {
-      width: 75%;
-    }
-  }
-}
-
 @media (max-width: 750px) {
-  .Demo-Quiz,
+  .Demo-Quiz {
+    width: 100%;
+  }
   .Take-Test {
     width: 100%;
   }
-  .Demo-Quiz {
-    padding-bottom: 2vh;
-    border-bottom: 2px dashed rgb(50, 185, 226);
+  .Demo-Quiz div {
+    width: 80%;
+    margin-top: 3rem;
   }
-  .Demo-Quiz button {
-    margin-top: 4vh;
+  .Test-Login {
+    width: 60%;
   }
-  .Test-Login div input {
-    font-size: 2.5vh;
-    width: 70%;
+  .Test-Login div input{
+    width: 77%;
   }
   .Test-Login div label {
-    font-size: 2.5vh;
-    width: 30%;
+    width: 15%;
   }
 }
-@media (max-width: 425px) {
-  .Demo-Quiz button {
-    width: 50%;
+@media (max-width: 450px) {
+  .Test-Login {
+    width: 80%;
   }
+}
+
+.Not-Authorized {
+  margin-top: 2rem;
+  margin-bottom: 26rem;
+  margin-left: 1rem;
+  width: 100%;
+}
+.Not-Authorized h1 {
+  display: flex;
+  align-content: center;
+  justify-content: center;
 }

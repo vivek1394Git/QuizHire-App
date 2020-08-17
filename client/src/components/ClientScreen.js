@@ -5,14 +5,14 @@ import Tests from "./Tests";
 import CreateTest from "./CreateTest";
 import AddTest from "./AddTest";
 import Result from "./Result";
-import "../componentsStyles/ClientScreen.css"
+import "../componentsStyles/ClientScreen.css";
 
 function ClientScreen() {
   const data = useSelector((state) => state.user.data);
 
   return (
     <div className="Client-Screen">
-      <Route exact path="/client" render={() => <h1 style={{margin:`4vh 0`}}>Hi {data.name}!</h1>} />
+      <Route exact path="/client" render={() => <h1>Hi {data.name}!</h1>} />
       <Route exact path="/client" component={Tests} />
       <Route
         exact

@@ -21,9 +21,17 @@ function Result({ history, match: { params }, token }) {
   return (
     <div className="Result">
       <h1>Result</h1>
-      {result.map((singleResult, index) => (
-        <SingleResult singleResult={singleResult} key={index + 1} index={index+1}/>
-      ))}
+      {result.length ? (
+        result.map((singleResult, index) => (
+          <SingleResult
+            singleResult={singleResult}
+            key={index + 1}
+            index={index + 1}
+          />
+        ))
+      ) : (
+        <h2>No one has taken the test till now!</h2>
+      )}
     </div>
   );
 }

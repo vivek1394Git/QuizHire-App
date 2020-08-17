@@ -14,8 +14,8 @@ const createStoreWithMiddleware = composeWithDevTools(
   )
 )(createStore);
 
-console.log(createStoreWithMiddleware)
-console.log(createStore)
+// console.log(createStoreWithMiddleware)
+// console.log(createStore)
 
 const store = createStoreWithMiddleware(rootReducer, load());
 
