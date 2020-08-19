@@ -8,9 +8,9 @@ import rootReducer from "./rootReducer";
 
 const createStoreWithMiddleware = composeWithDevTools(
   applyMiddleware(
-    save(),
+    save(), // Saving done here
     logger,
-    thunk // Saving done here
+    thunk 
   )
 )(createStore);
 
