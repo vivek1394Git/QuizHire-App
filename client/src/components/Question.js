@@ -15,7 +15,8 @@ function Question({ question, history, index, token }) {
   };
 
   const handleUpdate = () => {
-    history.push(`/admin/questions/update/${JSON.stringify(question)}`)
+    localStorage.setItem("question", JSON.stringify(question))
+    history.push(`/admin/questions/update/${JSON.stringify(question._id)}`)
   }
   return (
     <div className="List-Question">

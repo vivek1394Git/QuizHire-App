@@ -2,9 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 
 function UpdateQuestion({ history, token, match: { params } }) {
-  let oldQuestion = params.question;
-  oldQuestion = oldQuestion.replace("%7B", "{");
-  oldQuestion = oldQuestion.replace("%7D", "}");
+  let oldQuestion = localStorage.getItem("question")
   oldQuestion = JSON.parse(oldQuestion);
   const id = oldQuestion._id;
   const [question, setQuestion] = useState(oldQuestion.question);
