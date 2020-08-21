@@ -44,7 +44,8 @@ function submitTest(req, res) {
 
       for ({ _id, answer } of questions) {
         for (let question of result) {
-          if (question._id === _id && question.answer === answer) {
+          //question._id is an object
+          if (question._id == _id && question.answer == answer) {
             ++marks;
           }
         }
