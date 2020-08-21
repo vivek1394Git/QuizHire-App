@@ -23,6 +23,8 @@ It is fully responsive and mobile-friendly.
 
 * As a secure app,
   * No one should be able to get unauthorized access to a view and even if they get access to the view they must not be able to get or post any data.
+
+* ... and many more
   
 ### Upcoming User Stories: 
 * As a Client,
