@@ -10,7 +10,7 @@ It is fully responsive and mobile-friendly.
 ### Completed User Stories:
 * As a Client,
   * I should be able to make an account for my organizations hiring needs.
-  * I should be able to create for my organizations hiring needs.
+  * I should be able to create tests for my organizations hiring needs.
   * I should be able to see the result of the tests I've created.
 
 * As an Admin,
@@ -53,7 +53,7 @@ The back-end was developed on **NodeJS(a javascript runtime envionment), Express
 **Axios**, a promise-based http library was used to connect the **front-end** to the **back-end REST apis.**
 
 ### Deployment:
-The app was deployed on **heroku**.  
+The app was deployed on **Heroku**.  
 **The back-end server was responsible for serving both, the front-end code and the REST apis.**
 
 
