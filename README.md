@@ -3,6 +3,7 @@
 
 ## About:
 
+It is a hiring app, which can be used by any hiring team to conduct quiz tests for their candidates.  
 This is a **fully functional, full-stack(MERN), single page application(SPA)** built upon the **Model-View-Controller(MVC) architecture**.  
 It is fully responsive and mobile-friendly.
 
