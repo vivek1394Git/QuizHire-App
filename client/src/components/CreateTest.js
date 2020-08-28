@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import SingleTest from "./SingleTest";
 
-function CreateTest({ token, history, match:{url} }) {
+function CreateTest({ token, history, match: { url } }) {
   const [tests, setTests] = useState([]);
   const [numberOfQuestions, setNumberOfQuestions] = useState(0);
 
@@ -32,18 +32,22 @@ function CreateTest({ token, history, match:{url} }) {
         <button onClick={handleChange2}>Dashboard</button>
       </div>
       <h1>All Tests</h1>
-      {tests.map((test, index) => {
-        return (
-          <SingleTest
-            key={index + 1}
-            index={index + 1}
-            token={token}
-            test={test}
-            history={history}
-            url={url}
-          />
-        );
-      })}
+      {tests.length ? (
+        tests.map((test, index) => {
+          return (
+            <SingleTest
+              key={index + 1}
+              index={index + 1}
+              token={token}
+              test={test}
+              history={history}
+              url={url}
+            />
+          );
+        })
+      ) : (
+        <h2>You've not created a test.</h2>
+      )}
     </div>
   );
 }
